@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-texto;
+    font-size: 2rem;
+
+    a {
+        text-decoration: none;
+        color: $color-texto;
+    }
+
+    h2{
+        font-weight: normal;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .g-btnDescargar {
+        @include crearBoton(white,$color-primario);
+    }
+
+    .g-btnEnviar {
+        @include crearBoton(white, map-get($map: $colores-extra , $key: verde));
+    }
+
+    .g-btnReiniciar {
+        @include crearBoton(white, map-get($map: $colores-extra , $key: rojo));
+    }
+
+    .container {
+        padding: 0 3rem;
+
+        @include media-size( 768px, null) {
+            padding: 0;
+        }
+    }
+
+
+    .g-galeriaTrabajos {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "imagen1"
+            "imagen2"
+            "imagen3"
+            "imagen4"
+            "imagen5"
+            "imagen6";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+
+        @include media-size(576px,null){
+            display: grid;
+            grid-template-areas:
+                "imagen1 imagen2"
+                "imagen3 imagen4"
+                "imagen5 imagen6";
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @include media-size(768px,null){
+            grid-template-areas:
+                "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3"
+                "imagen4 imagen4 imagen4 imagen5 imagen5 imagen6";
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    } 
+    
+    .g-contenedorImagen {
+        width: 100%;
+        height: 200px;
+        display: flex;flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: map-get($colores-gradientes, gris);
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        transition: all ease-in-out 100ms;
+        animation-name: aparecerImages;
+        animation-duration: 1s;
+        
+        &:hover {
+            border: 1px solid #e6e6e6;
+            background: map-get($colores-gradientes, blanco);
+
+            @include media-size(576px,null){
+                transform: scale(120%);
+                box-shadow: 0px 20px 15px #00000030;
+            }
+        }
+    }
+    
+    @keyframes aparecerImages {
+        from {
+            transform: scale(0%);
+        }
+    
+        to {
+            transform: scale(100%);
+        }
+    }
+    
+    .g-contenedorImagen img {
+        height: auto;
+        width: 100%;
+        max-width: 198px;
+    }
+        
+    .g-contenedorImagen:nth-child(1){
+        grid-area: imagen1;
+    }
+    
+    .g-contenedorImagen:nth-child(2){
+        grid-area: imagen2;
+    }
+    
+    .g-contenedorImagen:nth-child(3){
+        grid-area: imagen3;
+    }
+    
+    .g-contenedorImagen:nth-child(4){
+        grid-area: imagen4;
+    }
+    
+    .g-contenedorImagen:nth-child(5){
+        grid-area: imagen5;
+    }
+    
+    .g-contenedorImagen:nth-child(6){
+        grid-area: imagen6;
+    }
+    
+    .g-contenedorImagen:nth-child(7){
+        grid-area: imagen7;
+    }
+    
+    .g-contenedorImagen:nth-child(8){
+        grid-area: imagen8;
+    }
+    
+    .g-contenedorImagen:nth-child(9){
+        grid-area: imagen9;
+    }
+    
+    .g-contenedorImagen:nth-child(10){
+        grid-area: imagen10;
+    }
+    
+    .g-contenedorImagen:nth-child(11){
+        grid-area: imagen11;
+    }
+    
+    .g-contenedorImagen:nth-child(12){
+        grid-area: imagen12;
+    }
+    
+}

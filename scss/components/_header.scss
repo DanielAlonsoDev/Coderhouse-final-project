@@ -1,0 +1,130 @@
+header {
+    background-color: white;
+    box-shadow: 0px 0.5rem 0.5rem #00000015;
+    height: 8rem;
+    position: relative;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        ul li a {
+            text-transform: uppercase;
+            
+            &:hover {
+                color: $color-texto;
+            }
+        }
+    
+        > ul > li {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .linkActivo {
+            color: $color-primario;
+        }
+    }
+
+    .navSitio {
+        display: none;
+        align-self: flex-end;
+
+        @include media-size(920px,null){
+            display: inline-block;
+        }
+
+        ul {
+            width: 64rem;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+
+            li:hover .submenu {
+                display: block;
+            }
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180%;
+            text-align: center;
+            padding: 0;
+
+            li {
+                display: block;
+                background-color: #eeeeee;
+                padding: 2rem;
+
+                &:hover {
+                    background-color: #dadada;
+                }
+            }
+        }
+    }
+
+    .navMobile ul {
+        background-color: #ffffff;
+        box-shadow: 0px 0.5rem 0.5rem #00000015;
+        width: 100%;
+        position: absolute;
+        top: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transition: opacity ease 300ms;
+        z-index: 10;
+
+        li {
+            padding: 1.5rem 0;
+
+            &:first-child {
+                padding-top: 3rem;
+            }
+
+            &:last-child {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+
+    #toogleMenu {
+        display: none;
+
+        &:checked {
+            ~ .iconoMenu i {
+                transform: rotateZ(90deg);
+            }
+
+            ~ ul {
+                display: flex;
+            }
+        }
+    }
+    
+    .iconoMenu {
+        font-size: 3rem;
+        transition: transform ease 100ms;
+
+        @include media-size(920px,null){
+            display: none;
+        }
+
+        i {
+            font-size: 3rem;
+            transition: transform ease 100ms;
+        }
+    }
+}

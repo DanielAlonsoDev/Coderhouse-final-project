@@ -1,0 +1,11 @@
+$color-texto: #313131;
+$color-primario: #51BFEA;
+$color-bordes:  #acacac;
+$colores-extra: ('verde': #39EB75, 'rojo' : #FF3A46 , 'amarillo': #ffd900);
+$colores-gradientes: (
+    'blanco': radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #FFFFFF 100%),
+    'gris': radial-gradient(50% 50% at 50% 50%, #ffffff 57%, #F5F5F5 100%),
+    'amarillo': radial-gradient(50% 50% at 50% 50%, #FFEF78 57%, darken(#FFEF78,2.5%) 100%)
+)
+
+ 

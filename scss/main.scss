@@ -1,0 +1,240 @@
+@import 'base/variables';
+@import 'base/extend';
+
+@import 'components/global';
+@import 'components/header';
+@import 'components/footer';
+
+/* ############ ESTILOS LANDING PAGE ############ */
+#landingPage {
+    .seccionBienvenida { /* BIENVENIDA */
+        background-color: #F1F2F2;
+        padding: 12rem 0;
+        text-align: center;
+
+        img {
+            max-width: 626px;
+            width: 100%;
+            animation: bienvenida 6s ease infinite;
+
+            @keyframes bienvenida {
+                0% {
+                    transform: scale(100%);
+                }
+            
+                15% {
+                    transform: scale(115%);
+                }
+            
+                30% {
+                    transform: scale(100%);
+                }
+            }
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 2rem 1rem 2rem 1rem;
+            font-size: 3rem;
+            position: relative;
+            min-width: 240px;
+
+            @include media-size(768px,null){
+                min-width: 400px;
+                margin: 2rem 1rem 2rem 1rem;
+            }
+        }
+
+        p {
+            line-height: 3rem;
+        }
+
+        @extend %tituloLinea;
+    }
+    
+    .experienciaDiseno { /* EXPERIENCIA DISENO */
+        margin-top: 13rem;
+
+        img {
+            max-width: 423px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+
+            @include media-size(768px,null){
+                text-align: left;
+            }
+        }
+
+        p {
+            margin-top: 3rem;
+            text-align: justify;
+        }
+
+        .row {
+            article {
+                &:first-child {
+                    text-align: center;
+                }
+
+                &:last-child {
+                    margin-top: 5rem;
+
+                    @include media-size(768px,null){
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .areasDiseno { /* AREAS DE TRABAJO */
+        margin-top: 20rem;
+
+        @extend %tituloLinea;
+        
+        h2 {
+            min-width: 200px;
+            margin: 0 8px;
+        }
+
+        .row {
+            margin-top: 8rem;
+
+            article {
+                margin-top: 8rem;
+
+                @include media-size(768px,null){
+                    margin-top: 0;
+                }
+
+                &:first-child {
+                    margin-top: 0px;
+                }
+
+                img {
+                    animation-name: animarArea;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease;
+
+                    @keyframes animarArea {
+                        from {
+                            transform: translate(-50%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translate(0%);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .nuestrosTrabajos { /* GALERIA DE TRABAJOS */
+        margin-top: 22rem;
+
+        h2 {
+            margin-bottom: 5rem;
+
+            @extend %bordeTitulos;
+        }
+    }
+    
+    .nuestrosClientes { /* NUESTROS CLIENTES */
+        background-color: #51BFEA;
+        color: white;
+        padding: 10rem 0;
+        margin-top: 16rem;
+
+        .contenedorClientes {
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+            align-items: center;
+            /*Animacion del contenedor */ 
+            animation: imagesClientes 1s;
+
+            @include media-size(576px,null){
+                flex-flow: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            @keyframes imagesClientes {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            img {
+                width: 180px;
+                margin-top: 7rem;
+
+                @include media-size(576px,null){
+                    width: 150px;
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .mapaUbicacion { /* MAPA UBICACION */ 
+        margin-top: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @include media-size(992px, null){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 5rem;
+            border-radius: 1rem;
+
+            @include media-size(992px, null){
+                margin: 0;
+            }
+        }
+
+        article {
+            display: inline-block;
+            width: 100%;
+
+            p {
+                display: inline-block;
+            }
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+
+            @include media-size(992px,null){
+                margin-top: 2rem;
+            }
+        }
+        
+        i {
+            font-size: 2.5rem;
+            color: $color-primario;
+            margin: 1rem 0.5rem 1rem 1rem;
+        }
+    }
+}

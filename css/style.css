@@ -1,0 +1,943 @@
+/* Estilos Generales de Sitio*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: #313131;
+}
+
+a:hover {
+    color: #313131;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin: 0 4px;
+}
+
+.btnCotizar {
+    background-color: #FF2A7F;
+    box-shadow: 0px 6px 0px #D02267;
+    transition: all ease 80ms;
+    position: relative;
+    top: 0;
+}
+
+.btnCotizar:hover {
+    background-color: #ff4690;
+}
+
+.btnCotizar:active {
+    background-color: #FF2A7F;
+    box-shadow: 0px 0px 0px #d33172;
+    top: 6px;
+}
+
+.btnEnviar {
+    background-color: #39EB75;    
+    box-shadow: 0px 4px 0px #29b457;   
+}
+
+.btnReiniciar {
+    background-color: #FF3A46;
+    box-shadow: 0px 4px 0px #d62430;
+}
+
+.colorVerde {
+    color: #39EB75;
+}
+
+.btnDescargar {
+    background-color: #51BFEA;
+    box-shadow: 0px 6px 0px #3AACD9;
+    transition: all ease 80ms;
+    position: relative;
+    top: 0;
+}
+
+.btnDescargar:hover {
+    background-color: #48b8e4;
+}
+
+.btnDescargar:active {
+    background-color: #51BFEA;
+    box-shadow: 0px 0px 0px #3AACD9;
+    top: 6px;
+}
+
+.colorGrisClaro {
+    color: #acacac;
+}
+
+.centrarTexto {
+    text-align: center;
+}
+
+.bordeAzul {
+    display: inline-block;
+    border-bottom: 4px solid #51BFEA;
+    padding: 0 8px 4px 8px;
+}
+
+.container {
+    padding: 0 25px;
+}
+
+
+/* Estilos del Header */
+header {
+    background-color: white;
+    box-shadow: 0px 3px 4px #00000015;
+    height: 64px;
+    position: relative;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li a {
+    text-transform: uppercase;
+}
+
+header .navSitio {
+    display: none;
+    align-self: flex-end;
+}
+
+.navSitio ul {
+    width: 550px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+header nav > ul > li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+header .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180%;
+    text-align: center;
+    padding: 0;
+}
+
+header .submenu li {
+    display: block;
+    background-color: #eeeeee;
+    padding: 16px;
+}
+
+header .submenu li:hover {
+    background-color: #dadada;
+} 
+
+header ul li:hover .submenu {
+    display: block;
+}
+
+.navMobile ul {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 4px #00000015;
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity ease 300ms;
+    z-index: 10;
+}
+
+.navMobile ul li {
+    padding: 10px 0;
+}
+
+.navMobile ul li:first-child {
+    padding-top: 24px;
+}
+
+.navMobile ul li:last-child {
+    padding-bottom: 24px;
+}
+
+#toogleMenu {
+    display: none;
+}
+
+.iconoMenu i {
+    font-size: 24px;
+    transition: transform ease 100ms;
+}
+
+#toogleMenu:checked ~ .iconoMenu i {
+    transform: rotateZ(90deg);
+}
+
+#toogleMenu:checked ~ ul {
+    display: flex;
+}
+
+.linkActivo {
+    color: #51BFEA;
+}
+
+
+
+/* Estilos del Footer */
+footer {
+    margin-top: 156px;
+}
+
+footer > .container {
+    border-top: 1px solid #acacac;
+    padding-top: 32px;
+}
+
+footer ul li a {
+    text-transform: uppercase;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+footer .navSitio ul {
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+}
+
+.enlacesFooter {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.redesSociales {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.redesSociales ul {
+    width: 150px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.redesSociales p {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.redesSociales i {
+    font-size: 24px;
+    color: #51BFEA;
+}
+
+.logoFooter {
+    display: block;
+    margin: 20px auto;
+}
+
+footer .barraLegal {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+}
+
+footer .barraLegal > div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/*###################################### ESTILOS DEL INDEX ######################################*/
+/* Estilos de la Seccion Bienvenida */
+.seccionBienvenida {
+    background-color: #F1F2F2;
+    padding: 100px 0;
+}
+
+.seccionBienvenida img {
+    max-width: 626px;
+    width: 100%;
+    animation: bienvenida 6s ease infinite;
+}
+
+@keyframes bienvenida {
+    0% {
+        transform: scale(100%);
+    }
+
+    15% {
+        transform: scale(115%);
+    }
+
+    30% {
+        transform: scale(100%);
+    }
+}
+
+.seccionBienvenida h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 16px;
+    font-size: 24px;
+    position: relative;
+    min-width: 240px;
+    margin: 0 8px;
+}
+
+.tituloLinea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tituloLinea h2 {
+    font-size: 24px;
+}
+
+.tituloLinea hr {
+    width: 100%;
+    height: 0;
+    border: 1px solid #cacaca;
+}
+
+.seccionBienvenida p {
+    line-height: 24px;
+}
+
+/* Estilos Experiencia en Diseno  */
+.experienciaDiseno {
+    display: flex;
+    flex-flow: column;
+    margin-top: 104px;
+}
+
+.experienciaDiseno article {
+    margin-top: 48px;
+    display: inline-block;
+}
+
+.experienciaDiseno h2 {
+    text-align: center;
+}
+
+.experienciaDiseno p {
+    margin-top: 24px;
+    text-align: justify;
+}
+
+/* Estilos Areas de Diseno  */
+.areasDiseno {
+    margin-top: 156px;
+}
+
+.areasDiseno .tituloLinea h2 {
+    min-width: 200px;
+    margin: 0 8px;
+    text-align: center;
+}
+
+.contenedorAreas {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorAreas article {
+    margin-top: 64px;
+}
+
+.contenedorAreas article:first-child {
+    margin-top: 0px;
+}
+
+.contenedorAreas article img {
+    animation-name: animarArea;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes animarArea {
+    from {
+        transform: translate(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+/* Estilos Nuestros Trabajos */
+.nuestrosTrabajos {
+    margin-top: 180px;
+}
+
+.nuestrosTrabajos h2 {
+    margin-bottom: 40px;
+}
+
+.galeriaTrabajos {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+} 
+
+.contenedorImagen {
+    width: 100%;
+    height: 200px;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 57.29%, #F5F5F5 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    transition: all ease-in-out 100ms;
+
+    animation-name: aparecerImages;
+    animation-duration: 1s;
+}
+
+@keyframes aparecerImages {
+    from {
+        transform: scale(0%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+.contenedorImagen img {
+    height: auto;
+    width: 100%;
+    max-width: 198px;
+}
+
+.contenedorImagen:hover {
+    transform: scale(120%);
+    box-shadow: 0px 20px 15px #00000030;
+    border: 1px solid #e6e6e6;
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 57.29%, #FFFFFF 100%);
+}
+
+.contenedorImagen:hover {
+    filter: grayscale(0%);
+}
+
+.contenedorImagen:nth-child(1){
+    grid-area: imagen1;
+}
+
+.contenedorImagen:nth-child(2){
+    grid-area: imagen2;
+}
+
+.contenedorImagen:nth-child(3){
+    grid-area: imagen3;
+}
+
+.contenedorImagen:nth-child(4){
+    grid-area: imagen4;
+}
+
+.contenedorImagen:nth-child(5){
+    grid-area: imagen5;
+}
+
+.contenedorImagen:nth-child(6){
+    grid-area: imagen6;
+}
+
+.contenedorImagen:nth-child(7){
+    grid-area: imagen7;
+}
+
+.contenedorImagen:nth-child(8){
+    grid-area: imagen8;
+}
+
+.contenedorImagen:nth-child(9){
+    grid-area: imagen9;
+}
+
+.contenedorImagen:nth-child(10){
+    grid-area: imagen10;
+}
+
+.contenedorImagen:nth-child(11){
+    grid-area: imagen11;
+}
+
+.contenedorImagen:nth-child(12){
+    grid-area: imagen12;
+}
+
+/* Estilos Nuestros Clientes */
+.nuestrosClientes {
+    background-color: #51BFEA;
+    color: white;
+    padding: 80px 0;
+    margin-top: 132px
+}
+
+.contenedorClientes {
+    margin-top: 56px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /*Animacion del contenedor */ 
+    animation: imagesClientes 1s;
+}
+
+@keyframes imagesClientes {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contenedorClientes img {
+    width: 180px;
+    margin-top: 56px;
+}
+
+.contenedorClientes img:nth-child(1) {
+    margin-top: 0;
+}
+
+/* Estilos Mapa Ubicacion */
+.mapaUbicacion {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mapaUbicacion iframe {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.mapaUbicacion article {
+    display: inline-block;
+    width: 100%;
+}
+
+.mapaUbicacion h2 {
+    margin-bottom: 16px;
+}
+
+.mapaUbicacion article p {
+    display: inline-block;
+}
+
+.mapaUbicacion i {
+    font-size: 20px;
+    color: #51BFEA;
+    margin: 10px 5px 10px 10px;
+}
+
+
+/*###################################### PAGINA SERVICIOS ######################################*/
+.listaServicios article {
+    margin-top: 80px;
+}
+
+.listaServicios h1 {
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.listaServicios h2 {
+    margin-bottom: 32px;
+}
+
+.listaServicios p {
+    margin-bottom: 64px;
+}
+
+.listaServicios table {
+    margin: auto;
+}
+
+.listaServicios table th,
+.listaServicios table td {
+    padding: 8px 24px;
+}
+
+.tablaDesktop {
+    display: none;
+    margin: 0 auto;
+    border: 1px solid #cacaca;
+}
+
+.tablaMobile table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 32px;
+    border: 1px solid #cacaca;
+}
+
+.tablaMobile table td {
+    width: 50%;
+}
+
+.listaServicios article > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.listaServicios article > ul > li {
+    width: 50%;
+    max-width: 400px;
+    min-width: 340px;
+    margin-top: 32px;
+}
+
+.listaServicios ul ul {
+    margin-left: 30px;
+    list-style: circle;
+}
+
+.listaServicios .tituloLinea h2 {
+    min-width: 260px;
+    margin: 0 8px;
+}
+
+/*###################################### PAGINA PORTAFOLIO ######################################*/
+.tusIdeas {
+    margin-top: 80px;
+}
+
+.tusIdeas h1 {
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.nuestroPortafolio {
+    margin-top: 124px;
+}
+
+.nuestroPortafolio .tituloLinea {
+    margin-bottom: 32px;
+}
+
+.nuestroPortafolio h2 {
+    min-width: 215px;
+    margin: 0 16px;
+}
+
+.nuestroPortafolio .galeriaTrabajos {
+    grid-template-areas:
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6"
+        "imagen7"
+        "imagen8"
+        "imagen9"
+        "imagen10"
+        "imagen11"
+        "imagen12";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+} 
+
+/*###################################### PAGINA NOSOTROS ######################################*/
+.sobreMi {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.imgWrap {
+    text-align: center;
+}
+
+.sobreMi img {
+    border-radius: 50%;
+    border: 3px solid #e6e6e6;
+    margin-bottom: 32px;
+}
+
+.sobreMi h2 {
+    margin-bottom: 8px;
+}
+
+.sobreMi h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.sobreMi h1 span {
+    color: #51BFEA;
+}
+
+.sobreMi article p {
+    text-align: justify;
+}
+
+.formacionEstudios .tituloLinea,
+.formacionAvanzada .tituloLinea {
+    margin-bottom: 40px;
+}
+
+.formacionEstudios .tituloLinea h2 {
+    font-weight: normal;
+    margin-right: 8px;
+    min-width: 130px;
+}
+
+.formacionAvanzada .tituloLinea h2 {
+    font-weight: normal;
+    margin-right: 8px;
+    min-width: 260px;
+}
+
+.formacionAvanzada {
+    margin-top: 96px;
+}
+
+.formacionEstudios article h4,
+.formacionAvanzada article h4 {
+    text-align: right;
+}
+
+.formacionEstudios article,
+.formacionAvanzada article {
+    margin-bottom: 32px;
+}
+
+/* HABILIDADES */
+.nivelesSkills {
+    background-color: #F1F2F2;
+    padding: 80px 0;
+    margin-top: 96px;
+}
+
+.skillsDesarrollo h2 {
+    margin-bottom: 24px;
+}
+
+.skillsDesarrollo ul {
+    list-style: circle;
+    margin-bottom: 32px;
+}
+
+.skillsDesarrollo li {
+    margin-left: 32px;
+}
+
+.skillsDiseno {
+    margin-top: 72px;
+}
+
+.skillsDiseno img {
+    animation-name: habilidades;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes habilidades {
+    from {
+        transform: scale(10%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+
+.skillsDiseno > div {
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cacaca;
+    border-radius: 8px;
+    margin: 0;
+    height: 100%;
+}
+
+.skillsDiseno h2 {
+    padding: 24px 0 24px 0;
+}
+
+.skillsDiseno h4 {
+    margin-top: 16px;
+    height: 40px;
+}
+
+.experiencia .carousel-item {
+    padding: 62px 20px 56px 20px;
+}
+
+.experiencia .carousel-item img {
+    padding: 40px 0;
+}
+
+.experiencia .carousel-item p {
+    text-align: justify;
+}
+
+.experiencia .carousel-item h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.experiencia .carousel-item h4 span {
+    color: #51BFEA;
+}
+
+.descargas {
+    margin-top: 88px;
+    border-top: 1px solid #cacaca;
+    padding: 88px 20px 0 20px;
+}
+
+.descargas button {
+    margin-top: 48px;
+}
+
+/*###################################### PAGINA CONTACTO ######################################*/
+.formularioContacto {
+    margin-top: 80px;
+}
+
+.formularioContacto h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.formularioContacto form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formularioContacto form label {
+    display: block;
+    text-align: left;
+}
+
+.formularioContacto form input[type="text"],
+.formularioContacto form select,
+.formularioContacto form textarea {
+    color: #313131;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #cacaca;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.formularioContacto form article {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.formularioContacto form input[type="checkbox"],
+.formularioContacto form input[type="radio"] {
+    margin-right: 4px;
+}
+
+.formularioContacto form input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+.formularioContacto form label[for="tipo_persona"] {
+    margin-bottom: 16px;
+
+}
+
+.formularioContacto form label[for="tipo_persona"] + div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formularioContacto form select:after {
+    display: none;
+}
