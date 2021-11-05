@@ -95,6 +95,7 @@ footer {
         display: flex;
         flex-flow: column;
         align-items: center;
+        text-align: center;
 
         @include media-size(920px,null){
             display: flex;
