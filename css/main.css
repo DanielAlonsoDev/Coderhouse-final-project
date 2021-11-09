@@ -10,7 +10,7 @@ body .g-btnDescargar, body .g-btnEnviar, body .g-btnReiniciar {
   position: relative;
   top: 0; }
 
-#landingPage .nuestrosTrabajos h2, #miPortafolio .tusIdeas h1 {
+#landingPage .nuestrosTrabajos h2, #miPortafolio .tusIdeas h1, #formularioContacto form h1 {
   display: inline-block;
   border-bottom: 0.5rem solid #51BFEA;
   padding: 0 8px 0.5rem 1rem; }
@@ -57,10 +57,10 @@ body {
     /* SELECCION DE COLORES */
     color: white;
     background-color: #51BFEA;
-    box-shadow: 0px 6px 0px #147ea7; }
+    box-shadow: 0px 6px 0px #1aa0d5; }
     body .g-btnDescargar:hover {
       background-color: #7fd0ef;
-      box-shadow: 0px 6px 0px #1aa0d5; }
+      box-shadow: 0px 6px 0px #23aee5; }
     body .g-btnDescargar:active {
       background-color: #51BFEA;
       /* se restan 6px para simular el movimiento del boton */
@@ -70,10 +70,10 @@ body {
     /* SELECCION DE COLORES */
     color: white;
     background-color: #39EB75;
-    box-shadow: 0px 6px 0px #0f953c; }
+    box-shadow: 0px 6px 0px #14c44f; }
     body .g-btnEnviar:hover {
       background-color: #67f095;
-      box-shadow: 0px 6px 0px #14c44f; }
+      box-shadow: 0px 6px 0px #16db58; }
     body .g-btnEnviar:active {
       background-color: #39EB75;
       /* se restan 6px para simular el movimiento del boton */
@@ -83,10 +83,10 @@ body {
     /* SELECCION DE COLORES */
     color: white;
     background-color: #FF3A46;
-    box-shadow: 0px 6px 0px #ba000b; }
+    box-shadow: 0px 6px 0px #ed000e; }
     body .g-btnReiniciar:hover {
       background-color: #ff6d76;
-      box-shadow: 0px 6px 0px #ed000e; }
+      box-shadow: 0px 6px 0px #ff0716; }
     body .g-btnReiniciar:active {
       background-color: #FF3A46;
       /* se restan 6px para simular el movimiento del boton */
@@ -499,7 +499,7 @@ footer {
 #miPortafolio .imagenesPortafolio {
   margin-top: 16rem; }
   #miPortafolio .imagenesPortafolio h2 {
-    min-width: 215px;
+    min-width: 27rem;
     margin: 0 2rem; }
   #miPortafolio .imagenesPortafolio .g-galeriaTrabajos {
     margin-top: 4rem;
@@ -517,3 +517,35 @@ footer {
         grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3" "imagen4 imagen4 imagen4 imagen4 imagen5 imagen5" "imagen6 imagen6 imagen6 imagen7 imagen7 imagen7" "imagen8 imagen8 imagen9 imagen9 imagen10 imagen10" "imagen11 imagen11 imagen12 imagen12 imagen12 imagen12";
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr); } }
+
+#formularioContacto form {
+  margin-top: 10rem; }
+  #formularioContacto form h1 {
+    font-size: 3.5rem;
+    margin: 0 auto 5rem 0; }
+  #formularioContacto form article {
+    margin-bottom: 4rem; }
+    #formularioContacto form article label {
+      display: block;
+      text-align: left; }
+    #formularioContacto form article .tipoPersona {
+      display: block;
+      margin-bottom: 2rem; }
+      #formularioContacto form article .tipoPersona + div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+    #formularioContacto form article input[type="text"],
+    #formularioContacto form article select,
+    #formularioContacto form article textarea {
+      color: #313131;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      border: 1px solid #acacac;
+      padding: 1rem 1.5rem;
+      margin-top: 1rem; }
+    #formularioContacto form article input[type="checkbox"], #formularioContacto form article input[type="radio"] {
+      margin-right: 4px; }
+    #formularioContacto form article input[type="checkbox"] + label {
+      display: inline-block; }

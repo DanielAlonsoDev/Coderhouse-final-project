@@ -937,7 +937,3 @@ footer .barraLegal > div {
     flex-direction: row;
     justify-content: space-around;
 }
-
-.formularioContacto form select:after {
-    display: none;
-}
