@@ -84,31 +84,31 @@
     </header>
     <main class="container">
         <section class="formularioContacto centrarTexto">
-            <form action="" class="row">
+            <form action="" class="row" data-netlify="true">
                 <article class="col-12 text-center">
                     <h1>Contacta conmigo</h1>
                 </article>
                 <article class="col-12 col-md-6">
                     <label for="correo">Tu Correo</label>
-                    <input type="text" placeholder="ejemplo@mail.com" name="correo">
+                    <input type="text" placeholder="ejemplo@mail.com" name="correo_cliente">
                 </article>
 
                 <article class="col-12 col-md-6">
                     <label for="nombre">Tu nombre</label>
-                    <input type="text" placeholder="Nombre Apellido" name="nombre">
+                    <input type="text" placeholder="Nombre Apellido" name="nombre_cliente">
                 </article>
 
                 <article class="col-12 col-md-6">
                     <span class="tipoPersona">Tipo de Cliente</span>
                     <div>
-                        <span><input type="radio" name="tipo_persona" value="natural" checked>Persona</span>
-                        <span><input type="radio" name="tipo_persona" value="juridico">Empresa o negocio</span>
+                        <span><input type="radio" name="tipo_cliente" value="natural" checked>Persona</span>
+                        <span><input type="radio" name="tipo_cliente" value="juridico">Empresa o negocio</span>
                     </div>
                 </article>
 
                 <article class="col-12 col-md-6">
                     <label for="pais">País</label>
-                    <select name="pais" id="pais_origen">
+                    <select name="pais_cliente" id="pais_origen">
                         <option value="Seleccionar">Seleccionar</option>
                         <option value="argentina">Argentina</option>
                         <option value="chile">Chile</option>
@@ -118,11 +118,11 @@
 
                 <article class="col-12">
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <textarea name="mensaje_cliente" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
                 </article>
 
                 <article class="col-12 col-md-6 text-center text-md-start">
-                    <input type="checkbox" id="newsletter" value="true" checked>
+                    <input type="checkbox" id="newsletter" value="true" checked name="newsletter_cliente">
                     <label for="newsletter">Suscribirte a nuestro newsletter</label>
                 </article>
 
