@@ -15,15 +15,15 @@ body .g-btnDescargar, body .g-btnEnviar, body .g-btnReiniciar {
   border-bottom: 0.5rem solid #51BFEA;
   padding: 0 8px 0.5rem 1rem; }
 
-#landingPage .seccionBienvenida .tituloLinea, #landingPage .areasDiseno .tituloLinea, #miPortafolio .tituloLinea {
+#landingPage .seccionBienvenida .tituloLinea, #landingPage .areasDiseno .tituloLinea, #miPortafolio .tituloLinea, #ServiciosProfesionales .detalleServicios .tituloLinea {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-#landingPage .seccionBienvenida .tituloLinea h2, #landingPage .areasDiseno .tituloLinea h2, #miPortafolio .tituloLinea h2 {
+#landingPage .seccionBienvenida .tituloLinea h2, #landingPage .areasDiseno .tituloLinea h2, #miPortafolio .tituloLinea h2, #ServiciosProfesionales .detalleServicios .tituloLinea h2 {
   font-size: 3rem; }
 
-#landingPage .seccionBienvenida .tituloLinea hr, #landingPage .areasDiseno .tituloLinea hr, #miPortafolio .tituloLinea hr {
+#landingPage .seccionBienvenida .tituloLinea hr, #landingPage .areasDiseno .tituloLinea hr, #miPortafolio .tituloLinea hr, #ServiciosProfesionales .detalleServicios .tituloLinea hr {
   width: 100%;
   height: 0;
   border: 1px solid #cacaca; }
@@ -549,3 +549,55 @@ footer {
       margin-right: 4px; }
     #formularioContacto form article input[type="checkbox"] + label {
       display: inline-block; }
+
+#ServiciosProfesionales .introServicios {
+  margin-top: 10rem;
+  margin-bottom: 10rem; }
+  #ServiciosProfesionales .introServicios h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem; }
+
+#ServiciosProfesionales .tablasServicios table {
+  m1argin: auto;
+  border: 1px solid #acacac; }
+  #ServiciosProfesionales .tablasServicios table th, #ServiciosProfesionales .tablasServicios table td {
+    padding: 1rem 3rem; }
+  #ServiciosProfesionales .tablasServicios table .colorVerde {
+    color: #39EB75; }
+  #ServiciosProfesionales .tablasServicios table .colorGrisClaro {
+    color: #acacac; }
+
+#ServiciosProfesionales .tablasServicios .tablaDesktop {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #ServiciosProfesionales .tablasServicios .tablaDesktop {
+      display: table; } }
+
+#ServiciosProfesionales .tablasServicios .tablaMobile table {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 4rem; }
+  #ServiciosProfesionales .tablasServicios .tablaMobile table td {
+    width: 50%; }
+
+@media only screen and (min-width: 768px) {
+  #ServiciosProfesionales .tablasServicios .tablaMobile {
+    display: none; } }
+
+#ServiciosProfesionales .detalleServicios {
+  margin-top: 10rem; }
+  #ServiciosProfesionales .detalleServicios .tituloLinea {
+    margin-bottom: 4rem; }
+    #ServiciosProfesionales .detalleServicios .tituloLinea h2 {
+      min-width: 35rem;
+      text-align: center; }
+  #ServiciosProfesionales .detalleServicios h4 {
+    font-weight: bold; }
+  #ServiciosProfesionales .detalleServicios > ul > li {
+    margin-top: 4rem; }
+    #ServiciosProfesionales .detalleServicios > ul > li div {
+      width: 60%;
+      margin: auto; }
+  #ServiciosProfesionales .detalleServicios ul ul {
+    margin-left: 4rem;
+    list-style: circle; }

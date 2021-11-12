@@ -362,3 +362,90 @@
         }        
     }
 }
+
+#ServiciosProfesionales {
+    .introServicios {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .tablasServicios {
+        table {
+            m1argin: auto;
+            border: 1px solid $color-bordes;
+
+            th, td {
+                padding: 1rem 3rem;
+            }
+
+            .colorVerde {
+                color: map-get($map: $colores-extra, $key: verde );
+            }
+
+            .colorGrisClaro {
+                color: $color-bordes;
+            }
+        }
+
+        .tablaDesktop {
+            display: none;
+
+            @include media-size($md-medium, null) {
+                display: table;
+            }
+        }
+
+        .tablaMobile {
+            table {
+                width: 100%;
+                max-width: 500px;
+                margin-bottom: 4rem;
+
+                td {
+                    width: 50%;
+                }
+            }
+
+            @include media-size($md-medium,null){
+                display: none;
+            }
+        }
+    }
+
+    .detalleServicios {
+        margin-top: 10rem;
+        @extend %tituloLinea;
+
+        .tituloLinea {
+            margin-bottom: 4rem;
+
+            h2 {
+                min-width: 35rem;
+                text-align: center;  
+            }
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+
+        > ul > li {
+            margin-top: 4rem;
+
+            div {
+                width: 60%;
+                margin: auto;
+            }
+        }
+
+        ul ul {
+            margin-left: 4rem;
+            list-style: circle;
+        }
+    }
+}
