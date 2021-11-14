@@ -1,4 +1,4 @@
-body .g-btnDescargar, body .g-btnEnviar, body .g-btnReiniciar {
+body .g-btnGenerico, body .g-btnEnviar, body .g-btnReiniciar {
   font-weight: bold;
   border: none;
   color: white;
@@ -8,7 +8,8 @@ body .g-btnDescargar, body .g-btnEnviar, body .g-btnReiniciar {
   margin: 0 0.5rem;
   transition: all ease 80ms;
   position: relative;
-  top: 0; }
+  top: 0;
+  display: inline-block; }
 
 #landingPage .nuestrosTrabajos h2, #miPortafolio .tusIdeas h1, #formularioContacto form h1 {
   display: inline-block;
@@ -53,15 +54,15 @@ body {
     list-style: none;
     margin: 0;
     padding: 0; }
-  body .g-btnDescargar {
+  body .g-btnGenerico {
     /* SELECCION DE COLORES */
     color: white;
     background-color: #51BFEA;
     box-shadow: 0px 6px 0px #1aa0d5; }
-    body .g-btnDescargar:hover {
+    body .g-btnGenerico:hover {
       background-color: #7fd0ef;
       box-shadow: 0px 6px 0px #23aee5; }
-    body .g-btnDescargar:active {
+    body .g-btnGenerico:active {
       background-color: #51BFEA;
       /* se restan 6px para simular el movimiento del boton */
       box-shadow: 0px 0px 0px #147ea7;
@@ -691,7 +692,7 @@ footer {
       font-weight: bold; }
 
 #sobreMi .experienciaProfesional .carousel-item {
-  padding: 8rem 2.5rem 7rem 2.5rem; }
+  padding: 8rem 3rem 7rem 3rem; }
   #sobreMi .experienciaProfesional .carousel-item img {
     padding: 5rem 0; }
   #sobreMi .experienciaProfesional .carousel-item p {
@@ -707,5 +708,16 @@ footer {
   margin-top: 11rem;
   border-top: 1px solid #cacaca;
   padding: 11rem 2.5rem 0 2.5rem; }
-  #sobreMi .experienciaProfesional .descargas button {
+  @media only screen and (min-width: 768px) {
+    #sobreMi .experienciaProfesional .descargas {
+      border-top: none;
+      border-left: 1px solid #cacaca; } }
+  #sobreMi .experienciaProfesional .descargas a {
     margin-top: 6rem; }
+
+#error404 .mensajeError {
+  margin-top: 14rem; }
+  #error404 .mensajeError p {
+    margin-top: 7rem; }
+  #error404 .mensajeError a {
+    margin-top: 4rem; }

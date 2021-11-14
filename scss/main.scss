@@ -620,7 +620,7 @@
 
     .experienciaProfesional {
         .carousel-item {
-            padding: 8rem 2.5rem 7rem 2.5rem;
+            padding: 8rem 3rem 7rem 3rem;
 
             img {
                 padding: 5rem 0;
@@ -646,11 +646,28 @@
             border-top: 1px solid #cacaca;
             padding: 11rem 2.5rem 0 2.5rem;
 
-            button {
+            @include media-size($md-medium,null){
+                border-top: none;
+                border-left: 1px solid #cacaca;
+            }
+
+            a {
                 margin-top: 6rem;
             }
         }
     }
+}
 
+#error404 {
+    .mensajeError {
+        margin-top: 14rem;
 
+        p {
+            margin-top: 7rem;
+        }
+
+        a {
+            margin-top: 4rem;
+        }
+    }
 }
