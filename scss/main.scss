@@ -449,3 +449,200 @@
         }
     }
 }
+
+#sobreMi {
+    .fichaPresentacion {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        text-align: center;
+
+        @include media-size($md-medium,null) {
+            text-align: left;
+        }
+
+        .imgWrap {
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+                border: 3px solid #e6e6e6;
+                margin-bottom: 32px;
+
+                @include media-size($md-medium,null){
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        article {
+            @include media-size($md-medium,null) {
+                margin-left: 4rem;
+            }
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+    
+            h1 {
+                font-size: 3.5rem;
+                margin-bottom: 2rem;
+                font-weight: 400;
+    
+                span {
+                    color: $color-primario;
+                }
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .formacionEstudios, .formacionAvanzada {
+        @extend %tituloLinea;
+
+        .tituloLinea {
+            margin-bottom: 5rem;
+
+            h2 {
+                font-weight: normal;
+                margin-right: 1rem;
+            }
+        }
+
+        article {
+            margin-bottom: 4rem;
+            
+            h4 {
+                text-align: right;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .formacionEstudios {
+        h2 {
+            min-width: 16.25rem;
+        }
+    }
+
+    .formacionAvanzada {
+        margin-top: 12rem;
+
+        h2 {
+            min-width: 32.5rem;
+        }
+    }
+
+    .nivelesSkills {
+        background-color: #F1F2F2;
+        padding: 10rem 0;
+        margin-top: 12rem;
+
+        .skillsDesarrollo {
+            @include media-size($md-medium,null){
+                margin-top: 4rem;
+            }
+
+            h2 {
+                margin-bottom: 3rem;
+            }
+
+            ul {
+                list-style: circle;
+                margin-bottom: 4rem;
+            }
+
+            li {
+                margin-left: 4rem;
+            }
+
+            h4 {
+                font-weight: bold;
+            }
+        }
+
+        .skillsDiseno {
+            margin-top: 9rem;
+            
+            @include media-size($md-medium,null){
+                margin: 0;
+                padding: 0 1.25rem;
+            }
+
+            > div {
+                align-items: center;
+                text-align: center;
+                border: 1px solid #cacaca;
+                border-radius: 1rem;
+                margin: 0;
+                height: 100%;
+                padding: 3rem 0 4rem 0;
+            }
+
+            h2 {
+                padding: 3rem 0 3rem 0;
+            }
+
+            img {
+                animation-name: habilidades;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+
+                @keyframes habilidades {
+                    from {
+                        transform: scale(10%);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: scale(100%);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            h4 {
+                margin-top: 2rem;
+                height: 5rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .experienciaProfesional {
+        .carousel-item {
+            padding: 8rem 2.5rem 7rem 2.5rem;
+
+            img {
+                padding: 5rem 0;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            h4 {
+                font-weight: normal;
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+
+                span {
+                    color: $color-primario;
+                }
+            }
+        }
+
+        .descargas {
+            margin-top: 11rem;
+            border-top: 1px solid #cacaca;
+            padding: 11rem 2.5rem 0 2.5rem;
+
+            button {
+                margin-top: 6rem;
+            }
+        }
+    }
+
+
+}
