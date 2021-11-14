@@ -45,31 +45,6 @@ header {
             display: flex;
             flex-flow: row;
             justify-content: space-between;
-
-            li:hover .submenu {
-                display: block;
-            }
-        }
-
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 180%;
-            text-align: center;
-            padding: 0;
-
-            li {
-                display: block;
-                background-color: #eeeeee;
-                padding: 2rem;
-
-                &:hover {
-                    background-color: #dadada;
-                }
-            }
         }
     }
 

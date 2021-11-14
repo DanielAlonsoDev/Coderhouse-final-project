@@ -347,6 +347,10 @@
                 margin-top: 1rem;
             }
 
+            select {
+                background-color: white;
+            }
+
             input {
                 &[type="checkbox"],
                 &[type="radio"] {
@@ -376,7 +380,7 @@
 
     .tablasServicios {
         table {
-            m1argin: auto;
+            margin: auto;
             border: 1px solid $color-bordes;
 
             th, td {
@@ -401,6 +405,10 @@
         }
 
         .tablaMobile {
+            @include media-size(null,320px){
+                font-size: 12px;
+            }
+
             table {
                 width: 100%;
                 max-width: 500px;
