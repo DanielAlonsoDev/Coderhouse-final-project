@@ -93,7 +93,8 @@ body {
     .g-contenedorImagen {
         width: 100%;
         height: 200px;
-        display: flex;flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: map-get($colores-gradientes, gris);

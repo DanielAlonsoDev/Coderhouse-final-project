@@ -172,6 +172,328 @@ body {
   to {
     transform: scale(100%); } }
 
+#animacionChat .smartphone, #animacionChat .risa, #animacionChat .nubeRisa, #animacionChat .nubeFeliz, #animacionChat .feliz, #animacionChat .mensaje1, #animacionChat .mensaje2, #animacionChat .mensaje3, #animacionChat .nube1, #animacionChat .nube2, #animacionChat .nube3, #animacionChat .nube4, #animacionChat .nube5 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; }
+
+#animacionChat {
+  width: 32.5rem;
+  height: 21.45rem;
+  position: relative;
+  background-color: #81d4f1;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: auto; }
+  @media only screen and (min-width: 576px) {
+    #animacionChat {
+      width: 60rem;
+      height: 39.6rem; } }
+  @media only screen and (min-width: 768px) {
+    #animacionChat {
+      width: 75rem;
+      height: 49.5rem; } }
+  @media only screen and (min-width: 992px) {
+    #animacionChat {
+      width: 112rem;
+      height: 73.92rem; } }
+  #animacionChat img {
+    transform: translate(-50%, -50%);
+    position: absolute; }
+  #animacionChat .smartphone {
+    left: 50%;
+    height: 80%;
+    top: 50%;
+    animation-name: entradaSmart; }
+
+@keyframes entradaSmart {
+  0% {
+    top: -50%; }
+  7% {
+    top: 50%; }
+  90% {
+    top: 50%; }
+  100% {
+    top: 150%; } }
+  #animacionChat .risa {
+    left: 70%;
+    top: 35%;
+    height: 20%;
+    animation-name: risa;
+    animation-timing-function: linear; }
+
+@keyframes risa {
+  0% {
+    transform: translate(-50%, -50%) scale(0%); }
+  12% {
+    transform: translate(-50%, -50%) scale(0%); }
+  14% {
+    transform: translate(-50%, -50%) scale(110%); }
+  15% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(0deg); }
+  26% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(30deg); }
+  36% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(0deg); }
+  46% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(-30deg); }
+  56% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(0deg); }
+  66% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(30deg); }
+  76% {
+    transform: translate(-50%, -50%) scale(100%) rotateZ(0deg); }
+  83% {
+    transform: translate(-50%, -50%) scale(100%); }
+  85% {
+    transform: translate(-50%, -50%) scale(0%); }
+  100% {
+    transform: translate(-50%, -50%) scale(0%); } }
+  #animacionChat .nubeRisa {
+    left: 58%;
+    top: 55%;
+    width: 25%;
+    transform: translate(0%, -100%) scale(0%);
+    transform-origin: 0% 100%;
+    animation-name: nubeRisa; }
+
+@keyframes nubeRisa {
+  0% {
+    transform: translate(0%, -100%) scale(0%); }
+  7% {
+    transform: translate(0%, -100%) scale(0%); }
+  10% {
+    transform: translate(0%, -100%) scale(110%); }
+  12% {
+    transform: translate(0%, -100%) scale(100%); }
+  85% {
+    transform: translate(0%, -100%) scale(100%); }
+  89% {
+    transform: translate(0%, -100%) scale(0%); }
+  100% {
+    transform: translate(0%, -100%) scale(0%); } }
+  #animacionChat .nubeFeliz {
+    width: 25%;
+    left: 42.5%;
+    top: 72%;
+    transform: translate(100%, -100%) scale(0%);
+    transform-origin: 100% 100%;
+    animation-name: nubeFeliz; }
+
+@keyframes nubeFeliz {
+  0% {
+    transform: translate(-100%, -100%) scale(0%); }
+  7% {
+    transform: translate(-100%, -100%) scale(0%); }
+  10% {
+    transform: translate(-100%, -100%) scale(110%); }
+  12% {
+    transform: translate(-100%, -100%) scale(100%); }
+  85% {
+    transform: translate(-100%, -100%) scale(100%); }
+  89% {
+    transform: translate(-100%, -100%) scale(0%); }
+  100% {
+    transform: translate(-100%, -100%) scale(0%); } }
+  #animacionChat .feliz {
+    left: 30%;
+    top: 52%;
+    height: 20%;
+    animation-name: feliz;
+    animation-timing-function: linear; }
+
+@keyframes feliz {
+  0% {
+    transform: translate(-50%, -50%) scale(0%); }
+  12% {
+    transform: translate(-50%, -50%) scale(0%); }
+  14% {
+    transform: translate(-50%, -50%) scale(110%); }
+  15% {
+    transform: translate(-50%, -50%) scale(100%); }
+  26% {
+    transform: translate(-50%, -50%) scale(100%); }
+  36% {
+    transform: translate(-50%, -50%) scale(100%); }
+  46% {
+    transform: translate(-50%, -50%) scale(100%); }
+  56% {
+    transform: translate(-50%, -50%) scale(100%); }
+  66% {
+    transform: translate(-50%, -50%) scale(100%); }
+  76% {
+    transform: translate(-50%, -50%) scale(100%); }
+  83% {
+    transform: translate(-50%, -50%) scale(100%); }
+  85% {
+    transform: translate(-50%, -50%) scale(0%); }
+  100% {
+    transform: translate(-50%, -50%) scale(0%); } }
+  #animacionChat .mensaje1, #animacionChat .mensaje2, #animacionChat .mensaje3 {
+    height: 10%; }
+  #animacionChat .mensaje1 {
+    left: 51.5%;
+    top: 46%;
+    animation-name: mensaje1; }
+
+@keyframes mensaje1 {
+  0% {
+    top: 53%;
+    opacity: 0; }
+  7% {
+    top: 53%;
+    opacity: 0; }
+  13% {
+    top: 46%;
+    opacity: 1; }
+  90% {
+    top: 46%; }
+  100% {
+    top: 146%; } }
+  #animacionChat .mensaje2 {
+    top: 56%;
+    left: 47.5%;
+    animation-name: mensaje2; }
+
+@keyframes mensaje2 {
+  0% {
+    top: 63%;
+    opacity: 0; }
+  13% {
+    top: 63%;
+    opacity: 0; }
+  19% {
+    top: 56%;
+    opacity: 1; }
+  90% {
+    top: 56%; }
+  100% {
+    top: 156%; } }
+  #animacionChat .mensaje3 {
+    left: 51.5%;
+    top: 66%;
+    animation-name: mensaje3; }
+
+@keyframes mensaje3 {
+  0% {
+    top: 73%;
+    opacity: 0; }
+  19% {
+    top: 73%;
+    opacity: 0; }
+  25% {
+    top: 66%;
+    opacity: 1; }
+  90% {
+    top: 66%; }
+  100% {
+    top: 166%; } }
+  #animacionChat .nube1 {
+    height: 20%;
+    left: 35%;
+    top: 80%;
+    transform: translate(-100%, -100%) scale(100%);
+    transform-origin: 100% 100%;
+    animation-name: nube1; }
+
+@keyframes nube1 {
+  0% {
+    transform: translate(-100%, -100%) scale(0%); }
+  15% {
+    transform: translate(-100%, -100%) scale(0%); }
+  19% {
+    transform: translate(-100%, -100%) scale(100%); }
+  82% {
+    transform: translate(-100%, -100%) scale(100%); }
+  85% {
+    transform: translate(-100%, -100%) scale(0%); }
+  100% {
+    transform: translate(-100%, -100%) scale(0%); } }
+  #animacionChat .nube2 {
+    height: 15%;
+    left: 35%;
+    top: 34%;
+    transform: translate(-100%, -100%) scale(100%);
+    transform-origin: 100% 100%;
+    animation-name: nube2; }
+
+@keyframes nube2 {
+  0% {
+    transform: translate(-100%, -100%) scale(0%); }
+  21% {
+    transform: translate(-100%, -100%) scale(0%); }
+  25% {
+    transform: translate(-100%, -100%) scale(100%); }
+  82% {
+    transform: translate(-100%, -100%) scale(100%); }
+  85% {
+    transform: translate(-100%, -100%) scale(0%); }
+  100% {
+    transform: translate(-100%, -100%) scale(0%); } }
+  #animacionChat .nube3 {
+    height: 10%;
+    left: 20%;
+    top: 80%;
+    transform: translate(0%, -100%) scale(100%);
+    transform-origin: 0% 100%;
+    animation-name: nube3; }
+
+@keyframes nube3 {
+  0% {
+    transform: translate(0%, -100%) scale(0%); }
+  22% {
+    transform: translate(0%, -100%) scale(0%); }
+  26% {
+    transform: translate(0%, -100%) scale(100%); }
+  82% {
+    transform: translate(0%, -100%) scale(100%); }
+  85% {
+    transform: translate(0%, -100%) scale(0%); }
+  100% {
+    transform: translate(0%, -100%) scale(0%); } }
+  #animacionChat .nube4 {
+    height: 15%;
+    left: 65%;
+    top: 75%;
+    transform: translate(0%, -100%) scale(100%);
+    transform-origin: 0% 100%;
+    animation-name: nube4; }
+
+@keyframes nube4 {
+  0% {
+    transform: translate(0%, -100%) scale(0%); }
+  25% {
+    transform: translate(0%, -100%) scale(0%); }
+  29% {
+    transform: translate(0%, -100%) scale(100%); }
+  82% {
+    transform: translate(0%, -100%) scale(100%); }
+  85% {
+    transform: translate(0%, -100%) scale(0%); }
+  100% {
+    transform: translate(0%, -100%) scale(0%); } }
+  #animacionChat .nube5 {
+    height: 10%;
+    left: 60%;
+    top: 80%;
+    transform: translate(0%, -100%) scale(100%);
+    transform-origin: 100% 100%;
+    animation-name: nube5; }
+
+@keyframes nube5 {
+  0% {
+    transform: translate(0%, -100%) scale(0%); }
+  23% {
+    transform: translate(0%, -100%) scale(0%); }
+  27% {
+    transform: translate(0%, -100%) scale(100%); }
+  80% {
+    transform: translate(0%, -100%) scale(100%); }
+  85% {
+    transform: translate(0%, -100%) scale(0%); }
+  100% {
+    transform: translate(0%, -100%) scale(0%); } }
+
 header {
   background-color: white;
   box-shadow: 0px 0.5rem 0.5rem #00000015;
@@ -512,32 +834,58 @@ footer {
       grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3" "imagen4 imagen4 imagen4 imagen4 imagen5 imagen5" "imagen6 imagen6 imagen6 imagen7 imagen7 imagen7" "imagen8 imagen8 imagen9 imagen9 imagen10 imagen10" "imagen11 imagen11 imagen12 imagen12 imagen12 imagen12";
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(2, 1fr); } }
-  @media only screen and (min-width: 768px) {
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos {
-      grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3" "imagen4 imagen4 imagen5 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen8 imagen9 imagen9";
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-  #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen {
-    background-size: cover;
-    background-position: 50% 50%; }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(1) {
-      background-image: url(../images/Tarjeta_Presentacion_1.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(2) {
-      background-image: url(../images/Folleto-01.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(3) {
-      background-image: url(../images/Folleto-02.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(4) {
-      background-image: url(../images/Carnet-1.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(5) {
-      background-image: url(../images/Carnet-2.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(6) {
-      background-image: url(../images/agenda.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(7) {
-      background-image: url(../images/calendario.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(8) {
-      background-image: url(../images/facturas.jpg); }
-    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(9) {
-      background-image: url(../images/Tarjetas-Servimed.jpg); }
+  #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos {
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6" "imagen7" "imagen8" "imagen9";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr); }
+    @media only screen and (min-width: 576px) {
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos {
+        grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "imagen5 imagen6" "imagen7 imagen8" "imagen9 imagen10" "imagen11 imagen12";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); } }
+    @media only screen and (min-width: 768px) {
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos {
+        grid-template-areas: "imagen1 imagen1 imagen2 imagen2 imagen3 imagen3" "imagen4 imagen4 imagen5 imagen5 imagen6 imagen6" "imagen7 imagen7 imagen8 imagen8 imagen9 imagen9";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+    #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen {
+      background-size: cover;
+      background-position: 50% 50%; }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(1) {
+        background-image: url(../images/Tarjeta_Presentacion_1.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(2) {
+        background-image: url(../images/Folleto-01.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(3) {
+        background-image: url(../images/Folleto-02.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(4) {
+        background-image: url(../images/Carnet-1.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(5) {
+        background-image: url(../images/Carnet-2.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(6) {
+        background-image: url(../images/agenda.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(7) {
+        background-image: url(../images/calendario.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(8) {
+        background-image: url(../images/facturas.jpg); }
+      #miPortafolio .imagenesPortafolio #collapseTwo .g-galeriaTrabajos .g-contenedorImagen:nth-child(9) {
+        background-image: url(../images/Tarjetas-Servimed.jpg); }
+  #miPortafolio .imagenesPortafolio #collapseThree .g-galeriaTrabajos {
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 3rem;
+    justify-items: center; }
+    @media only screen and (min-width: 576px) {
+      #miPortafolio .imagenesPortafolio #collapseThree .g-galeriaTrabajos {
+        grid-template-areas: "imagen1 imagen2" "imagen3 imagen4";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); } }
+    #miPortafolio .imagenesPortafolio #collapseThree .g-galeriaTrabajos video {
+      position: relative;
+      border-radius: 1rem;
+      border: 1px solid #e6e6e6;
+      width: 100%;
+      max-width: 576px; }
 
 #formularioContacto form {
   margin-top: 10rem; }
