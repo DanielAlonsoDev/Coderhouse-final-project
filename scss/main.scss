@@ -807,6 +807,11 @@
     .mensajeError {
         margin-top: 14rem;
 
+        img {
+            width: 100%;
+            max-width: 800px;
+        }
+
         p {
             margin-top: 7rem;
         }

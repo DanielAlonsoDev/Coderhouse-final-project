@@ -1111,6 +1111,9 @@ footer {
 
 #error404 .mensajeError {
   margin-top: 14rem; }
+  #error404 .mensajeError img {
+    width: 100%;
+    max-width: 800px; }
   #error404 .mensajeError p {
     margin-top: 7rem; }
   #error404 .mensajeError a {
