@@ -886,6 +886,14 @@ footer {
       border: 1px solid #e6e6e6;
       width: 100%;
       max-width: 576px; }
+  #miPortafolio .imagenesPortafolio #PrototipoColorLab, #miPortafolio .imagenesPortafolio #PrototipoPromatic {
+    display: none; }
+    @media only screen and (min-width: 1200px) {
+      #miPortafolio .imagenesPortafolio #PrototipoColorLab, #miPortafolio .imagenesPortafolio #PrototipoPromatic {
+        display: block; } }
+    #miPortafolio .imagenesPortafolio #PrototipoColorLab #ColorLab, #miPortafolio .imagenesPortafolio #PrototipoColorLab #Promatic, #miPortafolio .imagenesPortafolio #PrototipoPromatic #ColorLab, #miPortafolio .imagenesPortafolio #PrototipoPromatic #Promatic {
+      display: block;
+      margin: auto; }
 
 #formularioContacto form {
   margin-top: 10rem; }

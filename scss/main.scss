@@ -437,8 +437,17 @@
             }
         }
 
-        #collapseFour {
+        #PrototipoColorLab, #PrototipoPromatic {
+            display: none;
 
+            @include media-size($md-extraLarge,null){
+                display: block;
+            }
+
+            #ColorLab, #Promatic  {
+                display: block;
+                margin: auto;
+            }
         }
     }
 }
